@@ -1,0 +1,23 @@
+@import "@/app/styles/index";
+
+.access {
+  position: absolute;
+  max-width: 496px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  > .title {
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    line-height: 48px;
+    font-size: 32px;
+    user-select: none;
+    margin-bottom: 56px;
+  }
+
+  > .button {
+    margin: 0 auto;
+  }
+}

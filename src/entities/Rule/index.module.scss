@@ -1,0 +1,23 @@
+.container {
+  width: 1008px;
+  margin-bottom: 36px;
+
+  :global(.custom-button.ant-btn-primary) {
+    margin: 26px 0 20px auto;
+  }
+
+  > .wrapper {
+    margin: 20px 32px;
+
+    > .content {
+      display: flex;
+      align-items: center;
+
+      > p {
+        font-weight: 500;
+        margin-left: 15px;
+        user-select: none;
+      }
+    }
+  }
+}

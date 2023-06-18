@@ -1,0 +1,19 @@
+@import "@/app/styles/index";
+
+.header {
+  position: relative;
+  padding: 36px 0 0 34px;
+  display: flex;
+}
+
+.title {
+  font-weight: 900;
+  line-height: 30px;
+  color: $gray-500;
+  margin: 0 0 0 9.4px;
+  user-select: none;
+}
+
+.titleMain {
+  color: $dark-green;
+}
