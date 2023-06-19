@@ -1,0 +1,31 @@
+@import "@/app/styles/index";
+
+.container {
+  width: 1008px;
+  box-shadow: 0px 0px 3px rgba(31, 45, 63, 0.03), 0px 8px 32px rgba(31, 45, 63, 0.05);
+  margin: 93px 36px 80px 36px;
+
+  > .wrapper {
+    padding: 20px 32px;
+
+    .passportScan {
+      display: flex;
+      justify-content: space-between;
+
+      > div {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        line-height: 24px;
+
+        > span:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    > p {
+      color: $gray-500;
+    }
+  }
+}

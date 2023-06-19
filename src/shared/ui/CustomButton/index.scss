@@ -1,7 +1,6 @@
 @import "@/app/styles/index";
 
 .custom-button {
-  // @include transition(0.2s);
   box-sizing: content-box;
   font-family: $global-font-family;
   border-radius: 4px;
@@ -12,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   *,
   & {
@@ -62,14 +60,11 @@
     .icon {
       margin-top: 2px;
     }
-
-    // @include transition(0.05s);
   }
 
   .tag {
     min-width: 30px;
     min-height: 30px;
-    // background-color: $success;
     border-radius: 50px;
 
     display: flex;
@@ -105,6 +100,10 @@
     &:active {
       color: $white;
     }
+
+    &:disabled {
+      background: rgba(0, 173, 238, 0.3);
+    }
   }
 
   &.ant-btn-primary {
@@ -128,18 +127,10 @@
     }
 
     &.ant-btn-dangerous {
-      // border-color: $danger;
-      // background: $danger;
     }
 
     &:disabled,
     &:disabled:hover {
-      //* {
-      //  color: darkgrey;
-      //}
-
-      // border-color: $button-disabled_border;
-      // background: $button-disabled_bg;
     }
   }
 
@@ -159,69 +150,14 @@
     }
 
     &:active {
-      // background-color: rgba($primary-dark, 1);
 
       &.ant-btn-dangerous {
-        // background: $danger;
       }
 
     }
 
     &:disabled,
     &:disabled:hover {
-    }
-  }
-
-
-
-  &.type-primary-transparent {
-    border-radius: 8px;
-    font-weight: normal;
-    font-size: 16px;
-
-
-    &.ant-btn-dangerous {
-      // border-color: $danger;
-
-      * {
-        // color: $danger;
-      }
-    }
-
-    &:hover {
-      // background-color: rgba($primary-light, 0.05);
-
-      &.ant-btn-dangerous {
-        // border-color: $danger;
-      }
-    }
-
-    &:active {
-      // background-color: rgba($primary-dark, 1);
-
-      &.ant-btn-dangerous {
-        // border-color: $danger;
-      }
-
-      svg {
-        path {
-          fill: white;
-        }
-      }
-    }
-
-    &:disabled,
-    &:disabled:hover {
-      //* {
-      //  color: rgba(0, 0, 0, 0.25) !important;
-      //}
-
-      // background: $button-disabled_bg !important;
-      // border-color: $button-disabled_border !important;
-
-      svg {
-        opacity: 0.5;
-      }
     }
   }
 
@@ -232,5 +168,9 @@
 
   &.fullWidth {
     width: 100%;
+  }
+
+  &.button-active {
+    border: 1px solid $blue-600;
   }
 }

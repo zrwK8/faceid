@@ -1,6 +1,53 @@
-.ant-modal-wrap {
-  background: red;
-  > div {
-    max-width: 100% !important;
+@import "@/app/styles/index";
+
+.modal-header {
+  display: flex;
+  margin-bottom: 56px;
+
+  > span:first-child {
+    margin-right: 12px;
   }
 }
+
+.ant-modal {
+
+  &-wrap {
+    > div {
+      margin: 0;
+      top: 588px;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  &-content {
+    height: 1332px;
+    border-radius: 20px 20px 0 0 !important;
+    padding: 36px 36px 0 36px !important;
+    overflow: scroll;
+  }
+
+  &-title {
+    font-family: $global-font-family;
+    font-size: 32px !important;
+    line-height: 39px !important;
+    font-weight: 500 !important;
+    color: $black !important;
+  }
+
+  &-body {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-family: $global-font-family;
+    color: $black !important;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 20px;
+      margin-top: -20px;
+    }
+  }
+
+}
+

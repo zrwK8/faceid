@@ -14,7 +14,7 @@ const Notification: FC<NotificationProps> = (props) => {
             <div className={styles.content}>
               <p>{title}</p>
               <ul>
-                {alerts.map((alert) => <li>{alert}</li>)}
+                {alerts.map((alert, id) => <li key={id}>{alert}</li>)}
               </ul>
             </div>
           </div>

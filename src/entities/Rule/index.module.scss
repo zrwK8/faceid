@@ -2,12 +2,10 @@
   width: 1008px;
   margin-bottom: 36px;
 
-  :global(.custom-button.ant-btn-primary) {
-    margin: 26px 0 20px auto;
-  }
+  box-shadow: 0px 0px 3px rgba(31, 45, 63, 0.03), 0px 8px 32px rgba(31, 45, 63, 0.05);
 
   > .wrapper {
-    margin: 20px 32px;
+    padding: 20px 32px;
 
     > .content {
       display: flex;

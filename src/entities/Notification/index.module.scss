@@ -2,29 +2,31 @@
 
 .container {
   width: 1008px;
-  margin-bottom: 56px;
+  margin-bottom: 36px;
+  box-shadow: 0 0 3px rgba(31, 45, 63, 0.03), 0 8px 32px rgba(31, 45, 63, 0.05);
+
 
   > .wrapper {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin: 20px 32px;
-  }
-}
+    padding: 20px 32px;
 
-.notification {
-  display: flex;
+    .notification {
+      display: flex;
 
+      > .content {
+        > p {
+          margin: 0 0 0 12px;
+          font-weight: 500;
+          user-select: none;
+        }
 
-  > .content {
-    > p {
-      margin: 0 0 0 12px;
-      font-weight: 500;
-      user-select: none;
+        > ul {
+          user-select: none;
+        }
+      }
     }
 
-    > ul {
-      user-select: none;
+    :global(.custom-button.ant-btn-sm) {
+      margin-left: auto;
     }
   }
 }
