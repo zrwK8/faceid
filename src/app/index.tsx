@@ -12,7 +12,11 @@ function App() {
             {/*<Main/>*/}
             {/*<Information/>*/}
             {/*<TermsAndConditions />*/}
+<<<<<<< HEAD
             <PassportData/>
+=======
+            {/*<PassportData />*/}
+>>>>>>> b819cd749bf55f2e57206f57c592db36b6145222
         </>
     )
 }
