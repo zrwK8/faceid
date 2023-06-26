@@ -1,0 +1,81 @@
+@import "@/app/styles/index";
+
+.container {
+  width: 1008px;
+  margin: 0 36px;
+
+  > .wrapperHeader {
+    box-shadow: 0 0 3px rgba(31, 45, 63, 0.03), 0 8px 32px rgba(31, 45, 63, 0.05);
+    padding: 20px 32px;
+    border-radius: 8px;
+
+    .passportScan {
+      display: flex;
+      justify-content: space-between;
+
+      :global(.custom-button) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: 8px;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        line-height: 24px;
+
+        > span:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    > p {
+      color: $gray-500;
+    }
+  }
+
+  > .wrapperForm {
+    margin-top: 80px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .wrapperPhoto {
+    height: 242px;
+    width: 242px;
+    margin: 48px 0;
+
+    > .parentPhoto {
+      height: 224px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+}
+
+//.videoContainer {
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  margin: 0 auto;
+//  height: 846px;
+//  width: 846px;
+//
+//  > .video {
+//    height: 782px;
+//    aspect-ratio: 1 / 1;
+//    object-fit: cover;
+//    display: block;
+//    border-radius: 50%;
+//  }
+//}
+
+.disabled {
+  display: none !important;
+}

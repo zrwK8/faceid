@@ -9,10 +9,12 @@ const CustomModal: FC<CustomModalProps> = (props) => {
         open,
         title,
         iconName,
-        onCancel
+        onCancel,
+        style
     } = props
     return (
         <Modal
+            style={style}
             title={
                 <div className='modal-header'>
                     <Icon className="ant-modal-icon" name={iconName}/>

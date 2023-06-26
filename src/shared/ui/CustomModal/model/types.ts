@@ -5,5 +5,6 @@ export type CustomModalProps = {
     children?: any
     iconName: IconType
     title: string
-    onCancel: () => void;
+    onCancel?: () => void;
+    style?: object;
 }
